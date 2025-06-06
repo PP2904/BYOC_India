@@ -1,0 +1,16 @@
+<div id="clientKey" class="hidden">{{ clientKey }}</div>
+<div id="typeList" class="hidden">{{json typeList}}</div>
+<div id="countryCode" class="hidden">{{countryCode}}</div>
+<div id="currency" class="hidden">{{currency}}</div>
+
+<div id="payment-page">
+  <div class="container">
+    {{#each typeList}}
+      <div class="payment-container">
+        <div id="{{this}}-container" class="payment"></div> <!-- Unique id based on type -->
+      </div>
+    {{/each}}
+  </div>
+</div>
+
+<script type="text/javascript" src="../adyenImplementation.js"></script>
